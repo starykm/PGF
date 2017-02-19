@@ -114,3 +114,10 @@ select#cityNameSelect {
 	
 	 
 }
+.alert{
+	
+	color:red ;
+	font-family: AvenirLT-Black;
+	font-size: 18pt;
+	font-weight: 500;
+}
