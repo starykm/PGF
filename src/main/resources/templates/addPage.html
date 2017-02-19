@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>PGF </title>
+
+<link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+<link th:href="@{/css/global.css}" rel="stylesheet" type="text/css" />
+<script th:src="@{/js/jquery-3.1.1.min.js}"></script>
+
+<script type="text/javascript">
+
+$( document ).ready( function() {
+	$('#cityNameSelect').on('change',function(){
+		var url = encodeURIComponent($(this).val());
+		$("#customers").load("editPage/customer/filter?customerName=" + url );
+	});
+});
+
+</script>
+</head>
+<body class="htmlGlob">
+<div id="bar"> 	</div>
+<form action="#" th:action="@{/addPage}" 
+			method="post" autocomplete="off">
+	<div id="form_list" >
+			
+		
+			
+			 
+			
+			<div>
+					<span id="warnSpan" th:text="${warning}"></span>
+				</div>
+					
+			<div  class="customerUserName" >
+			
+				
+				<span id="addCity">	<label>Add Customer<input type="text" id="nameCustomer" name="nameCustomer" th:field="${helperObj.customer.name}"  /></label></span>
+				<span id="addCity">	<label>Add City<input type="text" id="nameCustomer" name="nameCity" th:field="${helperObj.City.name}"  /></label></span>
+			</div>
+					 <input class="btn btn-info btn-sm" type="submit"  name="action" value="save"  />
+					 <input class="btn btn-info btn-sm" type="submit"  name="action" value="main page >"  />
+				     <input class="btn btn-info btn-sm" type="submit"  name="action" value="edit page >"  />
+				</div>
+			
+			
+				</form>
+</body>
+</html>
+

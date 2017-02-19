@@ -1,0 +1,116 @@
+#labeCity {
+	width: 150px;
+}
+
+#nameCustomer {
+	margin-left: 7px;
+}
+
+#main {
+	margin: auto;
+	min-width: 80%;
+	max-width: 80%;
+	padding: 10px;
+	/*float:left;*/
+}
+
+.form_element {
+	text-align: center;
+}
+
+.htmlGlob {
+	margin: 0px;
+	background-color: #005C99;
+}
+
+#bar {
+	background-image: url("../images/logo.jpg");
+	height: 50px;
+	width: auto;
+	margin: 0px;
+	opacity: 0.95;
+}
+
+#welcome {
+	font-family: InsigniaLTPro;
+	font-size: 42px;
+	font-weight: bold;
+	margin: 0px;
+	color: #FFFFFF;
+	padding-left: 30%;
+}
+
+#toEditPage, #toMainPage {
+	padding-top: 30px; font-family : AvenirLT-Black;
+	font-size: 32px;
+	font-weight: normal;
+	color: #0090D7;
+	text-transform: uppercase;
+	font-style: normal;
+	cursor: pointer;
+	text-decoration: none !important;
+	font-family: AvenirLT-Black;
+}
+
+a, a:link, a:visited, a:active, a:hover {
+	text-decoration: none;
+	color: #0090D7;
+}
+
+#customers,#addCity {
+	font-family: AvenirLT-Black;
+	font-size: 25px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-style: normal;
+}
+
+#form_list {
+	padding-left: 30%;
+}
+
+#button {
+	background-color: #0090D7;
+	border-left-style:
+}
+
+select#cityNameSelect {
+	width: auto;
+	height: 40pt;
+	line-height: 40pt;
+	padding-right: 20pt;
+	text-indent: 4pt;
+	text-align: left;
+	vertical-align: middle;
+	box-shadow: inset 0 0 3px #606060;
+	border: 1px solid #acacac;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font-family: AvenirLT-Black;
+	font-size: 18pt;
+	font-weight: 500;
+	color: #0090D7;
+	cursor: pointer;
+	outline: none;
+}
+
+#nameCustomer,#username,#password{
+	
+	background-color: #0ecaf1;
+	
+}
+
+#warnSpan{
+	
+	color: #ffffff;
+	font-family:AvenirLT-Black;
+	font-size: 18pt;
+	font-weight: 500;
+	
+	 
+}

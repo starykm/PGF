@@ -1,0 +1,33 @@
+<html xmlns:th="http://www.thymeleaf.org" xmlns:tiles="http://www.thymeleaf.org">
+  <head>
+    <title tiles:fragment="title">Messages : Create</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link th:href="@{/css/global.css}" rel="stylesheet" type="text/css" />
+<script th:src="@{/js/jquery-3.1.1.min.js}"></script>  </head>
+<body class="htmlGlob" style="margin: 0px;background-color: #005C99">
+	<div id="bar" style="background-image:url(../images/logo.jpg);height:50px;width: auto;margin: 0px;opacity:0.95;"></div>
+    <div tiles:fragment="content">
+        <form name="f" th:action="@{/login}" method="post">               
+            <fieldset>
+                <legend id="addCity">Please Login</legend>
+                <div th:if="${param.error}" class="alert alert-error">    
+                    Invalid username and password.
+                </div>
+                <div th:if="${param.logout}" class="alert alert-success"> 
+                    You have been logged out.
+                </div>
+                <label for="username" style="font-family: AvenirLT-Black;font-size: 25px;font-weight: normal;color: #fff;text-transform: uppercase;font-style: normal;">Username</label>
+                <input type="text" id="username" name="username"/>        
+                <label id="addCity" for="password">Password</label>
+                <input type="password" id="password" name="password"/>    
+                <div class="form-actions">
+                    <a href="/index">
+                    <button type="submit" class="btn btn-info btn-sm">Log in</button>
+                	</a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+  </body>
+</html>
